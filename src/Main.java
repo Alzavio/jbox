@@ -60,17 +60,18 @@ public class Main {
         f.add(l2);
         f.add(l3);
 
-        // Event handlers for every button
-
+        // Initialise a box class to be updated once a button is clicked.
         Box box = new Box(
                 Double.parseDouble(t1.getText()),
                 Double.parseDouble(t2.getText()),
                 Double.parseDouble(t3.getText())
         );
 
+        // Event handlers for every button
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                // Update the values in box
                 box.setLength(Double.parseDouble(t1.getText()));
                 box.setWidth(Double.parseDouble(t2.getText()));
                 box.setHeight(Double.parseDouble(t3.getText()));
@@ -80,6 +81,7 @@ public class Main {
         b2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                // Update the values in box
                 box.setLength(Double.parseDouble(t1.getText()));
                 box.setWidth(Double.parseDouble(t2.getText()));
                 box.setHeight(Double.parseDouble(t3.getText()));
@@ -89,6 +91,7 @@ public class Main {
         b3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                // Update the values in box
                 box.setLength(Double.parseDouble(t1.getText()));
                 box.setWidth(Double.parseDouble(t2.getText()));
                 box.setHeight(Double.parseDouble(t3.getText()));
