@@ -3,7 +3,7 @@ public class Box {
     private double width = 0;
     private double height = 0;
 
-    public Box(double width, double height, double length) {
+    public Box(double length, double width, double height) {
         this.width = width;
         this.height = height;
         this.length = length;
